@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Angular 13 CRUD Example - ItSolutionStuff.com</h1>
+  
+    <a href="#" routerLink="/produto/create/" class="btn btn-success">Create New produto</a>
+    
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descricao</th>
+        <th width="220px">Action</th>
+      </tr>
+      <tr *ngFor="let produto of produtos">
+        <td>{{ produto.id }}</td>
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.descricao }}</td>
+        <!--<td>
+          <a href="#" [routerLink]="['/produto/', produto.id, 'view']" class="btn btn-info">View</a>
+          <a href="#" [routerLink]="['/produto/', produto.id, 'edit']" class="btn btn-primary">Edit</a>
+          <button type="button" (click)="deleteproduto(produto.id)" class="btn btn-danger">Delete</button>
+        </td>-->
+      </tr>
+    </table>
+ </div>
