@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>View Produto</h1>
+    <h1>Listar Produto</h1>
   
     <a href="#" routerLink="/produto/index" class="btn btn-primary">Back</a>
    
@@ -14,8 +14,18 @@
     </div>
    
     <div>
-        <strong>Descricao:</strong>
+        <strong>Descrição:</strong>
         <p>{{ produto.descricao }}</p>
+    </div>
+
+    <div>
+        <strong>Preço do Kg:</strong>
+        <p>{{ produto.preco_kg }}</p>
+    </div>
+
+    <div>
+        <strong>Estoque:</strong>
+        <p>{{ produto.estoque }}</p>
     </div>
    
 </div>
